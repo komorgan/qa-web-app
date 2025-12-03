@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Show repo structure
+        run: |
+          echo "Listing repo files:"
+          ls -R
+
+      # TODO: Add steps to start Leantime (if desired) and run tests.
+      # For example:
+      # - Run functional tests
+      # - Run lightweight static checks
