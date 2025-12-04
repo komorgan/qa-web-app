@@ -14,7 +14,7 @@ Install the following on your machine:
 
 -Git
 
--Docker Desktop (includes Docker and Docker Compose)
+-Docker Desktop (includes Docker and Docker Compose - if using Windows, ensure you install through the Docker website, not command line)
 
 -A code editor (for example, VS Code)
 
@@ -81,11 +81,11 @@ Set at least:
 
 The database host (usually the DB service name from docker-compose.yml, for example db).
 
-The database user, password, and database name.
+The database user, password, and database name. 
 
 The Leantime base URL, for example:
 
-LEANTIME_BASEURL=http://localhost:8080
+LEAN_APP_URL='http://localhost:8080'
 
 Make sure the port matches the one used in docker-compose.yml.
 
